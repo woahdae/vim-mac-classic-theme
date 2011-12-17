@@ -39,21 +39,21 @@ let g:colors_name = "mac_classic"
 " #DFDFDF - Invisible Characters
 " #EFEFEF - LineNumber & Non-Current StatusLine
 " #F0F6FF - CursorLine & CursorColumn
-" #FFFFFF - WHITE
+" #F8F8FE - Ghost white
 " }}}
 
 " GUI: {{{1
-hi Cursor  guifg=#FFFFFF ctermfg=15 guibg=#3C4C72 ctermbg=240
+hi Cursor  guifg=#F8F8FE ctermfg=15 guibg=#3C4C72 ctermbg=240
 hi Visual  guibg=#C6DEFF ctermbg=189
 hi CursorLine  guibg=#F0F6FF ctermbg=15
 hi CursorColumn  guibg=#F0F6FF ctermbg=15
 hi LineNr  guifg=#808080 ctermfg=244 guibg=#EFEFEF ctermbg=7
-hi VertSplit  guifg=#FFFFFF ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
+hi VertSplit  guifg=#F8F8FE ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
 hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=NONE gui=bold
 hi Pmenu guibg=#EFEFEF ctermbg=7
 hi PmenuSel  guibg=#C6DEFF ctermbg=189
 hi Directory  guifg=#D51015 ctermfg=160 gui=bold
-hi Folded  guifg=#0066FF ctermfg=27 guibg=#FFFFFF ctermbg=15
+hi Folded  guifg=#0066FF ctermfg=27 guibg=#F8F8FE ctermbg=15
 " StatusLine: {{{2
 hi StatusLine  guifg=#000000 ctermfg=0 guibg=#C6DEFF ctermbg=189 gui=italic
 hi StatusLineNC  guifg=#000000 ctermfg=0 guibg=#EFEFEF ctermbg=7 gui=NONE
@@ -64,15 +64,15 @@ hi IncSearch  guifg=NONE guibg=#FFCE77 ctermbg=222 gui=NONE
 hi Search  guibg=#FFE6BB ctermbg=223
 
 " Syntax: {{{1
-hi Normal  guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15
+hi Normal  guifg=#000000 ctermfg=0 guibg=#F8F8FE ctermbg=15
 hi Boolean  guifg=#6E79F1 ctermfg=69 gui=bold
 hi Character  guifg=#D51015 ctermfg=160 gui=bold
 hi Comment  guifg=#0066FF ctermfg=27 gui=italic
 hi Conditional  guifg=#1E39F6 ctermfg=27 gui=bold
 hi Constant  guifg=#D51015 ctermfg=160 gui=bold
 hi Define  guifg=#1E39F6 ctermfg=27 gui=bold
-hi ErrorMsg  guifg=#FFFFFF ctermfg=15 guibg=#990000 ctermbg=88
-hi WarningMsg  guifg=#FFFFFF ctermfg=15 guibg=#990000 ctermbg=88
+hi ErrorMsg  guifg=#F8F8FE ctermfg=15 guibg=#990000 ctermbg=88
+hi WarningMsg  guifg=#F8F8FE ctermfg=15 guibg=#990000 ctermbg=88
 hi Float  guifg=#0000A2 ctermfg=19
 hi Function  guifg=#0000A2 ctermfg=19 gui=bold
 hi Identifier  guifg=#1E39F6 ctermfg=27 gui=bold
@@ -90,27 +90,21 @@ hi Todo  guifg=#0066FF ctermfg=27 gui=inverse,bold,italic
 hi Underlined  gui=underline
 
 " Invisible character colors
-hi NonText  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
-hi SpecialKey  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
+hi NonText  guifg=#DFDFDF ctermfg=253 guibg=#F8F8FE ctermbg=15
+hi SpecialKey  guifg=#DFDFDF ctermfg=253 guibg=#F8F8FE ctermbg=15
 
 " Diff styles {{{1
-hi diffAdded guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffRemoved guifg=#D51015 guibg=#FFFFFF ctermfg=160 ctermbg=15
-hi diffFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
-hi diffNewFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
-hi diffLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
-
-hi diffAdd guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffChange guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffText guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi link diffDelete diffRemoved
+hi diffAdded guifg=#007B22 guibg=#F8F8FE ctermfg=28 ctermbg=15
+hi diffRemoved guifg=#D51015 guibg=#F8F8FE ctermfg=160 ctermbg=15
+hi diffFile guifg=#6E79F1 guibg=#F8F8FE ctermfg=69 ctermbg=15
+hi diffNewFile guifg=#6E79F1 guibg=#F8F8FE ctermfg=69 ctermbg=15
+hi diffLine guifg=#000000 guibg=#F8F8FE ctermfg=0 ctermbg=15
 " Git styles {{{1
-hi gitcommitFirstLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
-hi gitcommitSelectedType guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
+hi gitcommitSelectedType guifg=#007B22 guibg=#F8F8FE ctermfg=28 ctermbg=15
 hi link gitcommitSelectedFile gitcommitSelectedType
-hi gitcommitDiscardedType guifg=#D51015 guibg=#FFFFFF ctermfg=160 ctermbg=15
+hi gitcommitDiscardedType guifg=#D51015 guibg=#F8F8FE ctermfg=160 ctermbg=15
 hi link gitcommitDiscardedFile gitcommitDiscardedType
-hi gitcommitUntrackedFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
+hi gitcommitUntrackedFile guifg=#6E79F1 guibg=#F8F8FE ctermfg=69 ctermbg=15
 " Ruby styles {{{1
 hi rubyClass  guifg=#1E39F6 ctermfg=27 gui=bold
 hi rubyFunction  guifg=#0000A2 ctermfg=19 gui=bold
@@ -142,8 +136,6 @@ hi rubyRailsMethod  guifg=#3C4C72 ctermfg=240 gui=bold
 hi link erubyComment Comment
 hi erubyRailsMethod  guifg=#3C4C72 ctermfg=240 gui=bold
 
-" XML: {{{1
-hi link xmlEndTag xmlTag
 " HTML: {{{1
 hi htmlTag  guifg=#1E39F6 ctermfg=27
 hi link htmlEndTag htmlTag
